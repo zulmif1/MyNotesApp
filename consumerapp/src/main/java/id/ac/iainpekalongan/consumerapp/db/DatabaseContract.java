@@ -1,4 +1,4 @@
-package id.ac.iainpekalongan.mynotesapp.db;
+package id.ac.iainpekalongan.consumerapp.db;
 
 import android.net.Uri;
 import android.provider.BaseColumns;

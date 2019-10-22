@@ -1,11 +1,11 @@
-package id.ac.iainpekalongan.mynotesapp.helper;
+package id.ac.iainpekalongan.consumerapp.helper;
 
 import android.database.Cursor;
 
 import java.util.ArrayList;
 
-import id.ac.iainpekalongan.mynotesapp.entity.Note;
-import id.ac.iainpekalongan.mynotesapp.db.DatabaseContract;
+import id.ac.iainpekalongan.consumerapp.db.DatabaseContract;
+import id.ac.iainpekalongan.consumerapp.entity.Note;
 
 public class MappingHelper {
 

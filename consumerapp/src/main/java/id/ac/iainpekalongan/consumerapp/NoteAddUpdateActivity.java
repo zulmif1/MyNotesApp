@@ -1,13 +1,10 @@
-package id.ac.iainpekalongan.mynotesapp;
+package id.ac.iainpekalongan.consumerapp;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,19 +13,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import id.ac.iainpekalongan.mynotesapp.db.NoteHelper;
-import id.ac.iainpekalongan.mynotesapp.entity.Note;
-import id.ac.iainpekalongan.mynotesapp.helper.MappingHelper;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import static id.ac.iainpekalongan.mynotesapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
-import static id.ac.iainpekalongan.mynotesapp.db.DatabaseContract.NoteColumns.DATE;
-import static id.ac.iainpekalongan.mynotesapp.db.DatabaseContract.NoteColumns.DESCRIPTION;
-import static id.ac.iainpekalongan.mynotesapp.db.DatabaseContract.NoteColumns.TITLE;
+import id.ac.iainpekalongan.consumerapp.entity.Note;
+import id.ac.iainpekalongan.consumerapp.helper.MappingHelper;
+
+import static id.ac.iainpekalongan.consumerapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
+import static id.ac.iainpekalongan.consumerapp.db.DatabaseContract.NoteColumns.DATE;
+import static id.ac.iainpekalongan.consumerapp.db.DatabaseContract.NoteColumns.DESCRIPTION;
+import static id.ac.iainpekalongan.consumerapp.db.DatabaseContract.NoteColumns.TITLE;
 
 public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText edtTitle, edtDescription;

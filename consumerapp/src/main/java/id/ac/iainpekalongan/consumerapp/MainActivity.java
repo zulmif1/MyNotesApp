@@ -1,8 +1,4 @@
-package id.ac.iainpekalongan.mynotesapp;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package id.ac.iainpekalongan.consumerapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,17 +11,20 @@ import android.os.HandlerThread;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-import id.ac.iainpekalongan.mynotesapp.adapter.NoteAdapter;
-import id.ac.iainpekalongan.mynotesapp.db.DatabaseContract;
-import id.ac.iainpekalongan.mynotesapp.db.NoteHelper;
-import id.ac.iainpekalongan.mynotesapp.entity.Note;
-import id.ac.iainpekalongan.mynotesapp.helper.MappingHelper;
+import id.ac.iainpekalongan.consumerapp.adapter.NoteAdapter;
+import id.ac.iainpekalongan.consumerapp.db.DatabaseContract;
+import id.ac.iainpekalongan.consumerapp.entity.Note;
+import id.ac.iainpekalongan.consumerapp.helper.MappingHelper;
 
 public class MainActivity extends AppCompatActivity implements LoadNotesCallback {
     private ProgressBar progressBar;
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements LoadNotesCallback
         setContentView(R.layout.activity_main);
 
         if (getSupportActionBar() != null)
-            getSupportActionBar().setTitle("Notes");
+            getSupportActionBar().setTitle("Consumer Notes");
 
         progressBar = findViewById(R.id.progressbar);
         rvNotes = findViewById(R.id.rv_notes);
